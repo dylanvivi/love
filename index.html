@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="shortcut icon" href="favicon.ico" >
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
+	<link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+	<link href="css/default_dev.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/curtain.css">
+	<link rel="stylesheet" href="css/endcover.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
+</head>
+
+<body>
+
+<div class="loading" id="onlo">
+	<span>Just a moment please...</span>
+</div>
+
+<ul class="menu">
+    <li><button href="#up">∧</button></li>
+    <li><button href="#down">∨</button></li>
+</ul>
+
+<ul id="curtain-links-menu">
+    <li><a href="#lovetime" class="curtain-links">Love Time</a></li>
+    <li><a href="#lovebg" class="curtain-links">Love BG</a></li>
+    <li><a href="#loveletter" class="curtain-links">Love Letter</a></li>
+    <li><a href="#lovecover" class="curtain-links">Love Cover</a></li>
+</ul>
+
+
+	
+<ol class="curtains">
+    <li id="lovetime" class="cover">
+        <article>
+		<canvas id="myCanvas" width="700" height="700"></canvas>
+            <div id="time" style="display:none;">
+			<h1>We have fallen in love for</h1>
+			<div id="elapseClock"></div>
+			<div id="arrow" style="text-align:center;margin-top:100px;display:none;"><img src="images/jianpan.gif" /></div>
+			</div>
+			
+        </article>
+    </li>
+	
+	<li id="lovebg" class="cover">
+		<div class="cover-wrapper">
+			<img src="images/colors.jpg"/>
+			<span>Our Love Way...</span>
+		</div>
+    </li>
+
+	<!-- way to nanjing -->
+	<li id="way2nj" class="way">
+		<div id="intro"><img src="images/nj.jpg" class="first"></div>
+		<div id="story">
+			<div class="row1 col5">
+				<h1 class="size3" style="color:#333;">南京 & 徐州</h1>
+				<h2>KeyWords:</h2>
+				<blockquote class="width8 ">
+					<p><strong>DAY1：</strong>D315、狙击电话亭、南京南、地铁、小p、<strong>彤德莱</strong>、金嗓子、夫子庙、夜游秦淮河、4路</p>
+					<p><strong>DAY2：</strong>12：00、甜茄子、<strong>怪味木须肉</strong>、中山陵、细雨、丹枫雨露、学校、夫子庙小吃街、锅贴、蟹黄汤包、赤豆元宵、年糕、鸭杂、炸香蕉、素鸡串、螃蟹串、<strong>戒指刻字</strong>、水游城、快乐柠檬</p>
+
+					<p><strong>DAY3：</strong>新东新、新街口、多克多、鸭德堡鸭血粉丝、家乐福、学校、400米赛跑</p>
+
+					<p><strong>DAY4：</strong>肉夹馍、紫薯点心、麻辣烫、D320、<strong>徐州东</strong>、10w、神马神马医院、九七医院、18w、解放路、建国东路、1818、市二院、露天烧烤、烙馍、肉筋、蛙鱼、云龙山庙会、萧萧</p>
+
+					<p><strong>DAY5：</strong>狗肉、烟、不愉快、13:20、G134、北京……</p>
+
+					<p>…………	</p>		
+				</blockquote>
+			</div>
+		</div>
+	</li>
+		
+			
+		<!-- way to TJ-->	
+		<li class="way" id="way2tj">
+			<div id="intro"><img src="images/tj.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col1">
+				<h1 class="size3">天津de年味儿 </h1>
+				<h2>KeyWords：</h2>
+				<blockquote class="width4 ">
+				<p>城际、五大道、KTV、彤德莱</p>
+				<p>大麻花、蹦豆儿张、洋货市场、摩天轮、红绳儿、庙会、意大利风情街、孔明灯</p>
+				</blockquote>
+				</div>
+			</div>
+		</li>
+		
+		<!-- way to CD-->
+		<li class="way" id="way2cd">	
+			<div id="intro"><img src="images/cd.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col5">
+					<h1 class="size3">美景美食美女：成都</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width8 ">
+						<p><strong>DAY 1:</strong>悲催的亲戚、T2航站楼、科华北路、蓝色加勒比、串串儿、啤酒、半夜买药</p>
+						<p><strong>DAY 2:</strong>春熙路、锅魁、打着伞的自行车、锦里、寄给未来的明信片、武侯祠、茶与布朗、咖啡、川大、巴蜀大宅门火锅、双皮奶</p>
+						<p><strong>DAY 3:</strong>宽窄巷子、春熙路、抄手、王府井百货、丢了的电影票、川菜、家乐福</p>
+						<p><strong>DAY 4:</strong>悲催的酸奶、乐山、峨眉、大师、蛋烘糕、钵钵鸡</p>
+
+					</blockquote>
+				</div>
+			</div>
+		</li>
+		
+		<!-- way to CQ-->
+		<li class="way" id="way2cq">
+			<div id="intro"><img src="images/cq.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col5">
+					<h1 class="size3">山城重庆:吃着火锅儿唱着歌儿</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width8 ">
+						<p><strong>DAY 5:</strong>成渝动车、青山和他的朋友们、奇火锅、解放碑、重庆北站、狮子坪、轻轨</p>
+						<p><strong>DAY 6:</strong>瓷器口、簪子、照片、情书、元祖绿球球、洋人街、羊肉串、摆渡、朝天门邮轮、老火锅</p>
+						<p><strong>DAY 7:</strong>找邮局、拿火炬偷换我的可爱多！土家菜、江北国际机场……</p>
+					</blockquote>
+				</div>
+			</div>
+		</li>
+		
+		<!-- way to SHIDU-->
+		<li class="way" id="way2sd">
+			<div id="intro"><img src="images/sd.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col1">
+					<h1 class="size3">五一赶大集：十渡</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width5 ">
+						<p>堵车、400rmb、胃疼、炸蝎子、农家院、竹排、三国杀、烤羊腿</p>
+						<p>漂流、落水、等车、堵车……</p>
+					</blockquote>
+				</div>
+			</div>
+		</li>
+		<!-- end way to shidu-->
+		
+		<!-- way to zhimaowan-->
+		<li class="way" id="way2zmw">
+			<div id="intro"><img src="images/zmw.jpg" class="first"></div>
+			<div id="story">
+				<div class="row1 col1">
+					<h1 class="size3">相约时光海</h1>
+					<h2>KeyWords:</h2>
+					<blockquote class="width5 ">
+						<p>Day1: 5：00、麦当劳早餐、自驾、没做好的准备工作、孟家各种村、时光海、止锚湾、下雨、烟花</p>
+						<p>Day2: 老龙头、快艇、天下第一关、时光海、落地窗、孔明灯、漂亮的石头</p>
+						<p>Day3: 没看成的日出、返程、北京大雨、小肥羊</p>
+					</blockquote>
+				</div>
+			</div>
+		</li>
+	<!-- end 旅行足迹，小飞机飞过效果 -->
+	
+	<!-- way to smile-->
+		<li class="way" id="smiles">
+			<h1 class="title">最好的礼物：见眉不见眼的笑容们~</h1>
+			<section class="pe-container">
+				<ul id="pe-thumbs" class="pe-thumbs">
+					<li><a href="#"><img src="images/thumbs/1.jpg" /><div class="pe-description"><h3>Quarrel</h3><p>吵完架，火车站，镜头前还是笑容</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/2.jpg" /><div class="pe-description"><h3>Travel</h3><p>重庆机场，返京</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/3.jpg" /><div class="pe-description"><h3>The Moment</h3><p>十一的鸟巢，眼神中的宠爱</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/4.jpg" /><div class="pe-description"><h3>Water</h3><p>五一，十渡，漂流惊魂记</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/5.jpg" /><div class="pe-description"><h3>Crazys</h3><p>798，五一三大日子</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/6.jpg" /><div class="pe-description"><h3>Sea</h3><p>端午，止锚湾，说好的带我看海</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/7.jpg" /><div class="pe-description"><h3>Snack</h3><p>锦里，好吃的，笨蛋写情书</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/8.jpg" /><div class="pe-description"><h3>Ship</h3><p>满江红，重庆朝天门</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/9.jpg" /><div class="pe-description"><h3>Love is always young</h3><p>重庆，洋人街山寨一日游</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/10.jpg" /><div class="pe-description"><h3>Because of you</h3><p>止锚湾，笑得好傻</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/11.jpg" /><div class="pe-description"><h3>Smile </h3><p>紫竹院，模仿抱椰子笑容1</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/12.jpg" /><div class="pe-description"><h3>Smile</h3><p>紫竹院，模仿抱椰子笑容2</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/13.jpg" /><div class="pe-description"><h3>Memories</h3><p>你在笑什么</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/14.jpg" /><div class="pe-description"><h3>Happiness</h3><p>This is LOVE ...</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/15.jpg" /><div class="pe-description"><h3>Miracle</h3><p>眼镜儿好看不？献宝……老龙头</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/16.jpg" /><div class="pe-description"><h3>Jump</h3><p>小红人儿飞飞</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/17.jpg" /><div class="pe-description"><h3>The air to breathe</h3><p>象耳朵</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/18.jpg" /><div class="pe-description"><h3>Shy</h3><p>解放碑，害羞了</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/19.jpg" /><div class="pe-description"><h3>See What</h3><p>落地窗，帅哥你在看啥</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/20.jpg" /><div class="pe-description"><h3>Happy</h3><p>送你一个见眉不见眼的big smile*^_^*</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/21.jpg" /><div class="pe-description"><h3>Belong Together</h3><p>哎呦呦，好大一颗心</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/22.jpg" /><div class="pe-description"><h3>Considerate</h3><p>欢乐谷，多么体贴的杜先生</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/23.jpg" /><div class="pe-description"><h3>Look</h3><p>像不像大眼睛的小兔纸</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/24.jpg" /><div class="pe-description"><h3>Traveling Alone</h3><p>云南石林模仿小兔纸逗逗远方的杜先生</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/25.jpg" /><div class="pe-description"><h3>Couple face</h3><p>海洋馆，大鼻子小眼睛</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/26.jpg" /><div class="pe-description"><h3>Thankful</h3><p>生日生日谁在哭</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/27.jpg" /><div class="pe-description"><h3>Lover</h3><p>鸟巢，妆花了</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/28.jpg" /><div class="pe-description"><h3>New Year</h3><p>这个冬天，杜先生有点儿冷</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/29.jpg" /><div class="pe-description"><h3>Sunshine</h3><p>A Kiss...</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/30.jpg" /><div class="pe-description"><h3>My Life</h3><p>其实我是把眼睛都笑没了才不得不借助ps的……</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/31.jpg" /><div class="pe-description"><h3>Winter</h3><p>双人小冰车儿</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/32.jpg" /><div class="pe-description"><h3>My bag Your Smile</h3><p>我的书包，你的笑容</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/33.jpg" /><div class="pe-description"><h3>July 20, 2011</h3><p>那一天...</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/34.jpg" /><div class="pe-description"><h3>KTV</h3><p>走调二人组</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/35.jpg" /><div class="pe-description"><h3>Kiss</h3><p>宽窄巷子假装小清新</p></div></a></li>
+					<li><a href="#"><img src="images/thumbs/36.jpg" /><div class="pe-description"><h3>Forever</h3><p>我想永远永远在一起</p></div></a></li>
+				</ul>
+			</section>
+		</li>
+	<!-- end 旅行足迹，小飞机飞过效果 -->
+    
+	<li id="loveletter">
+        <div class="fixed">
+            <h1>Love Letter</h1>
+			<p>To the world you may be one person, but to me, you are the world ~</p>
+        </div>
+        <div class="content-wrapper">
+			<ul class="steplist">
+			<li class="step">
+            <h1>Dear Mr. Du:</h1>
+			<p>现在是2012年5月8号22:34，我决定开始动笔写一封情书，每天写一点儿，然后把它作为纪念我们在一块儿一周年的礼物之一送给你~你看，我这么早就开始准备了，是不是应该奖励一个big kiss？</p>
+			<p>没错，咱们俩在一块儿一年了！真想抱着你旋转一个360°，不过还是算了，你抱着我转也是一样的！~最开始的几个月，你总说因为在一块儿经历的太多，所以觉得在一起的时间比实际要多。如果现在回想一年前我们每天在王府井流窜的日子，确实有种恍如隔世的感觉。</p>
+			<p>好多人说，没有永远的爱情，发展到了最后，都成了亲情。即使最开始没有爱情，相处久了一样也可以拥有亲情。于是这些人告诉我们，起点不重要，因为终点是相同的。可我坚持认为不是这样的，因为我爱你，因为我觉得幸福是发自内心的满足，所以我有理由相信，我们会幸福的~</p>
+			<p>嗯。来说一些没跟你说过的事儿吧，有些事情也许我会永远记得，有些事情慢慢的变成了习惯。但当初他们发生的时候，我是真心被感动了，并且时刻感激着。</p>
+			<p>最近一次，五一去十渡，囧。真不想提我掉水里这件事，很丢人有木有。。。还做鬼脸呢，扑通一下就掉水里了。做出各种本能反应以后，狼狈的站在浅滩上寻找你的身影，并开始思索能不能说服其他某条船载我下去。然后看见了你，一边冲我喊着等你，一边奋力的用仅剩的那个桨企图逆流而上，然而你还是和小艇一块儿被水冲走了……我低头检视自己：湿嗒嗒的裤子，可以拧出水来的上衣，谅是谁也不愿在此料峭春寒中，请这么一尊湿佛于自己干爽的船上吧。何况我落水处处于急流中间，即使有心停下来载我上去，也是不易。我又环顾四周，浅滩三面环水，有陆地的一边却是荆棘丛生：各种干草很是扎脚，索性水也不深，倒是可以淌到对岸，走比较平缓的石头路到下游与你会合。</p>
+			</li>
+			<li class="step">
+			<div class="width50"><img class="pie-img aligncenter" src="http://lh4.ggpht.com/-naKrzexmJ4I/T6yzKckilbI/AAAAAAAAAd4/VCyWAn2sYBQ/DSC09435_%2525E5%252589%2525AF%2525E6%25259C%2525AC.jpg?imgmax=512"/>
+			</div>
+			<div class="width50">
+			<p>再抬头，你已经把小艇停在下游的岸边，费力向我走来。不忘挥舞着没拎拖鞋的那只手，让我原地等你~于是，那一刻，我终于不再思考自己怎么脱困，只知道，原地等你，便好。说来也可笑，刚才满心是怎么从三面环水的浅滩回到陆地上，看到你来，竟然开始委屈了。握着你修长的手指，开始抱怨春风是多么的寒冷，河水是多么的冰凉，浅滩通往小艇的路上会有多么多的干草和小虫子……也发现了我手心的血泡以及眼镜的遗失……</p>
+			</div>
+			<div style="clear:both;"></div>
+			<p>呵呵，知道吗？其实那时我心里是前所未有的踏实……我总说自己在某种程度上是个缺乏安全感的姑娘，而那一刻，你就像每个灰姑娘心中期待的王子那样，披荆斩棘而来，满足了我全部的安全感。哈哈，杜先生~我就喜欢你这种纯爷们儿的范儿，用你足够宽阔的肩膀，撑起我的一方天堂~~</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;">
+			<img class="pie-img aligncenter" src="http://lh3.ggpht.com/-yiMQiABYlXA/T6yzISb1qgI/AAAAAAAAAd4/9hwXBH02wDI/wKgBt0-O4bbGU4BoAAMg9DP0tN065.groupinfo.w600._%2525E5%252589%2525AF%2525E6%25259C%2525AC.jpg?imgmax=512"/>
+			</p>
+			<p>在成都，从没想过除了父母之外还会有人半夜爬起来给我买药……都说如果喜欢一个人，要跟他去旅行。在一个陌生的环境里最容易显露出一个人的本性，而你，一如既往的温柔体贴。嘿嘿，先给你颁个奖，以防以后这事儿多了你翻个身接着睡……</p>
+
+			</li>
+			
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img aligncenter" src="http://lh6.ggpht.com/-XZMUs9ohQBE/T6y0rjezEHI/AAAAAAAAAeY/dc8N8c33F0A/DSC0932.jpg?imgmax=512"/></p>
+			<p>冬天接我妈下班，咱俩应该是刚从大钟寺出来，身上暖暖的，你仍开了3档暖风，说，妈妈从外面进来，会冷。</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img aligncenter" src="http://lh3.ggpht.com/-yH_fKJrDjj4/T4WkZUWMFTI/AAAAAAAAAaU/TUbCWCV8Az4/DSC091032.jpg?imgmax=512"/></p>
+			<p>虽然现在我已经习惯了一见你就把身上能卸下来的包包都卸下来丢给你了事，但依旧记得，最开始挤5号线地铁时，你夺过我粉红色的电脑包，一把把我拽到怀里霸道的说，帮我媳妇儿拿东西是应该的样子。</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img" src="http://lh4.ggpht.com/-1MyK7YYxPsI/T7nanvU8dbI/AAAAAAAAAhM/vAAId7meCj0/1336282316458.jpg?imgmax=512" /></p>
+			<p>大家都说戒烟是件很难的事儿，你却为了我一再退让：从少抽，不在我面前抽，一天五根，一天三根，一天一根……到两天一根，三天一根，五天一根……到现在一根都不抽了……</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img" src="http://lh6.ggpht.com/-mle7AjHe8Zk/T7m4TXMradI/AAAAAAAAAg8/n9x7D083U3k/ca_202322.jpg?imgmax=512"/></p>
+			<p>五一三大日子，我把你介绍给我最亲密的几个姐妹，相处下来，大家都夸你靠谱细致。你就这么轻易的虏获了人心，现在好了，你的朋友，我的朋友，以及我们共同的朋友都说你好，以后吵架了，肯定都帮着你，我可咋办啊？！T-T~~~~</p>
+			<p>晚上卧谈，主题是争吵。我使劲儿的想，却怎么也想不起来你的发脾气的样子……其实有时候也挺怕的，怕你总是让着我，然后有天就爆发了，吓死我。</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img" src="http://lh5.ggpht.com/-Z6jyAYHhF08/T7pcvV65iWI/AAAAAAAAAiI/NCp9hvKfF6E/DSC034982.JPG?imgmax=512" /></p>
+			<p>楼上是苏小洁拍的一张照片，应该是我们最常有的样子：你的手臂圈过我的脖子，走的肆意张扬。我手舞足蹈的说着什么，笑的不着边际————这是我最喜欢的样子~</p>
+			</li>
+			<li class="step">
+			<p style="text-align: center;"><img class="pie-img aligncenter" src="http://lh3.ggpht.com/-9WrWXAHctIM/T6y0O4fTuwI/AAAAAAAAAeY/5YPmDcNT0HY/T2f4WkXo8aXXXXXXXX_%252521%25252172282551.jpg?imgmax=512"/></p>
+			<p>我喜欢你在包包里翻出的两块快化了的巧克力，喜欢伴着星空灯映出的点点繁星与你聊天，喜欢无论多大的雨多小的伞都淋不湿的我的裙子，喜欢你主动说买戒指主动给戒指刻字并且擅自决定把它放在无名指上，这些这些都让我觉得幸福甜蜜……</p>
+			</li>
+			<li class="step">
+			<p>……</p>
+			<p>如同最开始说的，有些事也许我们会永远记得，有些则慢慢的变成了顺理成章。但在他们发生的时候，我真切的觉得甜蜜。记录下来，让回忆的味道温暖~亲爱的，咱们的路一定很长，当爱情慢慢变成亲情，这些点滴的甜蜜，是以后磨合期包容的基础。当然，主要还是你得包容我……</p>
+
+			<p style="text-align: right;">爱你的：李夫人</p>
+            </li>
+			</ul>
+        </div>
+    </li>
+    
+    <li id="lovecover">
+		<!-- 大头照 视差错位效果的泡泡 && video -->
+		<ul class="steplist">
+			<li class="step" id="step1"></li>
+			<li class="step" id="step2"></li>
+			<li class="step say">
+					<h1>笨蛋杜先生</h1>
+					<p>你说我会免费告诉你我经常被这些小细节<br/>打动吗？还不赶紧请我喝柠檬贿赂我~！<br/>(*^o^*)</p>
+					<p>嘿嘿，感觉自己好幸福喔，有如此宠我爱<br/>  我的你。想想都是你对我好，我对你足够<br/>好吗？你把我宠坏了怎么办呀？！　　　</p>
+					<h1>亲爱的杜先生</h1><p>生日快乐!一周年快乐!我爱你<br/>要一起吃到老，玩到老喔！~</p>
+					<h3 class="videoLink">Here is A Video</h3>
+			</li>
+			<li class="step" id="step4"></li>
+		</ul>
+			<img src="images/smile.png" height="100%" id="seventhImg" class="full-background">
+			
+		<!--video -->
+		<div class="videoCurtain">&nbsp;</div>
+		<video controls class="videoLarge" preload="auto">
+			<source src="http://vid1158.photobucket.com/albums/p605/dylan_li/video.mp4" type="video/mp4">
+		</video>
+		<!--end of video -->
+    </li>
+
+</ol>
+
+<audio src="http://home.space.net.au/~mdclare/Song/Lonestar_Amazed.mp3" autoplay="autoplay" loop="3" /> 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 450,
+           controls: '.menu',
+           curtainLinks: '.curtain-links'
+       });
+    });
+</script>
+<script type="text/javascript" src="js/jquery.proximity.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Photo	= (function() {
+					
+						// list of thumbs
+					var $list		= $('#pe-thumbs'),
+						// list's width and offset left.
+						// this will be used to know the position of the description container
+						listW		= $list.width(),
+						listL		= $list.offset().left,
+						// the images
+						$elems		= $list.find('img'),
+						// the description containers
+						$descrp		= $list.find('div.pe-description'),
+						// maxScale : maximum scale value the image will have
+						// minOpacity / maxOpacity : minimum (set in the CSS) and maximum values for the image's opacity
+						settings	= {
+							maxScale	: 1.3,
+							maxOpacity	: 0.9,
+							minOpacity	: Number( $elems.css('opacity') )
+						},
+						init		= function() {
+							
+							// minScale will be set in the CSS
+							settings.minScale = _getScaleVal() || 1;
+							// preload the images (thumbs)
+							_loadImages( function() {
+								
+								_calcDescrp();
+								_initEvents();
+							
+							});
+						
+						},
+						// Get Value of CSS Scale through JavaScript:
+						// http://css-tricks.com/get-value-of-css-rotation-through-javascript/
+						_getScaleVal= function() {
+						
+							var st = window.getComputedStyle($elems.get(0), null),
+								tr = st.getPropertyValue("-webkit-transform") ||
+									 st.getPropertyValue("-moz-transform") ||
+									 st.getPropertyValue("-ms-transform") ||
+									 st.getPropertyValue("-o-transform") ||
+									 st.getPropertyValue("transform") ||
+									 "fail...";
+
+							if( tr !== 'none' ) {	 
+
+								var values = tr.split('(')[1].split(')')[0].split(','),
+									a = values[0],
+									b = values[1],
+									c = values[2],
+									d = values[3];
+
+								return Math.sqrt( a * a + b * b );
+							
+							}
+							
+						},
+						// calculates the style values for the description containers,
+						// based on the settings variable
+						_calcDescrp	= function() {
+							
+							$descrp.each( function(i) {
+							
+								var $el		= $(this),
+									$img	= $el.prev(),
+									img_w	= $img.width(),
+									img_h	= $img.height(),
+									img_n_w	= settings.maxScale * img_w,
+									img_n_h	= settings.maxScale * img_h,
+									space_t = ( img_n_h - img_h ) / 2,
+									space_l = ( img_n_w - img_w ) / 2;
+								
+								$el.data( 'space_l', space_l ).css({
+									height	: settings.maxScale * $el.height(),
+									top		: -space_t,
+									left	: img_n_w - space_l
+								});
+							
+							});
+						
+						},
+						_initEvents	= function() {
+						
+							$elems.on('proximity.Photo', { max: 80, throttle: 10, fireOutOfBounds : true }, function(event, proximity, distance) {
+								
+								var $el			= $(this),
+									$li			= $el.closest('li'),
+									$desc		= $el.next(),
+									scaleVal	= proximity * ( settings.maxScale - settings.minScale ) + settings.minScale,
+									scaleExp	= 'scale(' + scaleVal + ')';
+								
+								// change the z-index of the element once it reaches the maximum scale value
+								// also, show the description container
+								if( scaleVal === settings.maxScale ) {
+									
+									$li.css( 'z-index', 1000 );
+									
+									if( $desc.offset().left + $desc.width() > listL + listW ) {
+										
+										$desc.css( 'left', -$desc.width() - $desc.data( 'space_l' ) );
+									
+									}
+									
+									$desc.fadeIn( 800 );
+									
+								}	
+								else {
+									
+									$li.css( 'z-index', 1 );
+								
+									$desc.stop(true,true).hide();
+								
+								}	
+								
+								$el.css({
+									'-webkit-transform'	: scaleExp,
+									'-moz-transform'	: scaleExp,
+									'-o-transform'		: scaleExp,
+									'-ms-transform'		: scaleExp,
+									'transform'			: scaleExp,
+									'opacity'			: ( proximity * ( settings.maxOpacity - settings.minOpacity ) + settings.minOpacity )
+								});
+
+							});
+						
+						},
+						_loadImages	= function( callback ) {
+							
+							var loaded 	= 0,
+								total	= $elems.length;
+							
+							$elems.each( function(i) {
+								
+								var $el = $(this);
+								
+								$('<img/>').load( function() {
+									
+									++loaded;
+									if( loaded === total )
+										callback.call();
+									
+								}).attr( 'src', $el.attr('src') );
+							
+							});
+						
+						};
+					
+					return {
+						init	: init
+					};
+				
+				})();
+				
+				Photo.init();
+				
+			});
+		</script>
+	
+
+<script type="text/javascript" src="js/lovetime.js"></script>
+<script type="text/javascript" src="js/heart.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+</body>
+</html>
